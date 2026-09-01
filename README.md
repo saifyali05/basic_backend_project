@@ -163,7 +163,7 @@ curl http://localhost:3000/api/products
 Get filtered products:
 
 ```bash
-curl "http://localhost:3000/api/products?category=Electronics&minPrice=50&sort=-price"
+curl "http://localhost:5000/api/products?category=Electronics&minPrice=50&sort=-price"
 ```
 
 Update a product:
@@ -187,7 +187,7 @@ curl -X DELETE http://localhost:3000/api/products/<product-id>
 
 | Variable | Description |
 | --- | --- |
-| `PORT` | Server port. Defaults to `3000` if not provided. |
+| `PORT` | Server port. Defaults to `5000` if not provided. |
 | `MONGO_URI` | MongoDB connection string. |
 
 ## Notes
