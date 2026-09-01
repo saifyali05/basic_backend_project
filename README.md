@@ -2,6 +2,8 @@
 
 A simple REST API for managing e-commerce products, built with Node.js, Express, MongoDB, and Mongoose.
 
+Project URL: https://github.com/saifyali05/basic_backend_project
+
 ## Features
 
 - Create, read, update, and delete products
@@ -63,7 +65,7 @@ npm install
 3. Create a `.env` file in the project root:
 
 ```env
-PORT=3000
+PORT=5000
 MONGO_URI=your_mongodb_connection_string
 ```
 
@@ -142,7 +144,7 @@ Use these with `GET /api/products`.
 Create a product:
 
 ```bash
-curl -X POST http://localhost:3000/api/products \
+curl -X POST http://localhost:5000/api/products \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Wireless Headphones",
@@ -157,7 +159,7 @@ curl -X POST http://localhost:3000/api/products \
 Get all products:
 
 ```bash
-curl http://localhost:3000/api/products
+curl http://localhost:5000/api/products
 ```
 
 Get filtered products:
@@ -169,7 +171,7 @@ curl "http://localhost:5000/api/products?category=Electronics&minPrice=50&sort=-
 Update a product:
 
 ```bash
-curl -X PUT http://localhost:3000/api/products/<product-id> \
+curl -X PUT http://localhost:5000/api/products/<product-id> \
   -H "Content-Type: application/json" \
   -d '{
     "price": 89.99,
@@ -180,7 +182,7 @@ curl -X PUT http://localhost:3000/api/products/<product-id> \
 Delete a product:
 
 ```bash
-curl -X DELETE http://localhost:3000/api/products/<product-id>
+curl -X DELETE http://localhost:5000/api/products/<product-id>
 ```
 
 ## Environment Variables
