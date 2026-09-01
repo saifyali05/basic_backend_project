@@ -2,7 +2,7 @@
 
 A simple REST API for managing e-commerce products, built with Node.js, Express, MongoDB, and Mongoose.
 
-Project URL: https://github.com/saifyali05/basic_backend_project
+Project URL:[ https://github.com/saifyali05/basic_backend_project](https://roadmap.sh/projects/ecommerce-api)
 
 ## Features
 
