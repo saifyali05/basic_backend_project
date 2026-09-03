@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./src/config/db");
 const productRoutes = require("./src/routes/productRoutes");
-
+const authRoutes = require("./src/routes/authRoutes");
 dotenv.config();
 
 const app = express();
@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRoutes);
+app.use("/api/auth", authRoutes);
 
 // Database
 connectDB();
